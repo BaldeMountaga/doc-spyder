@@ -14,6 +14,9 @@ import Calendar from './pages/Calendar';
 import VoiceCall from './pages/VoiceCall';
 import VideoCall from './pages/VideoCall';
 import SearchDoctor from './pages/SearchDoctor';
+import PatientProfieSetting from "./pages/PatientProfieSetting";
+import ChangePassword from "./pages/ChangePassword";
+import DoctorProfileSetting from "./pages/DoctorProfileSetting";
 
 
 const App = () => {
@@ -28,6 +31,9 @@ const App = () => {
                 <Route path={"/voice-call"} component={VoiceCall}/>
                 <Route path={"/video-call"} component={VideoCall}/>
                 <Route path={"/search"} component={SearchDoctor}/>
+                <Route path={"/userprofile-setting"} component={PatientProfieSetting}/>
+                 <Route path={"/doctorprofile-setting"} component={DoctorProfileSetting}/>
+                <Route path={"/change-password"} component={ChangePassword}/>
             </Switch>
         </Layout>
     )
