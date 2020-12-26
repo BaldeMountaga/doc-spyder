@@ -3,7 +3,6 @@ import React from 'react';
 
 import FeatureImage1 from '../../assets/img/features/feature-01.jpg';
 import FeatureImage2 from '../../assets/img/features/feature-02.jpg';
-import DoctorImage1 from '../../assets/img/doctors/doctor-thumb-01.jpg';
 import DoctorImage2 from '../../assets/img/doctors/doctor-thumb-02.jpg';
 
 const BreadCrumb = () => {
