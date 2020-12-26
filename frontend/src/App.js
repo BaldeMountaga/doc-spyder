@@ -17,6 +17,7 @@ import SearchDoctor from './pages/SearchDoctor';
 import PatientProfieSetting from "./pages/PatientProfieSetting";
 import ChangePassword from "./pages/ChangePassword";
 import DoctorProfileSetting from "./pages/DoctorProfileSetting";
+import Checkout from './pages/Checkout'
 
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
                 <Route path={"/userprofile-setting"} component={PatientProfieSetting}/>
                  <Route path={"/doctorprofile-setting"} component={DoctorProfileSetting}/>
                 <Route path={"/change-password"} component={ChangePassword}/>
+                <Route path={"/checkout"} component={Checkout}/>
             </Switch>
         </Layout>
     )
