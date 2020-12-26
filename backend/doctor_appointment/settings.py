@@ -1,4 +1,5 @@
 from pathlib import Path
+from datetime import timedelta
 
 import environ
 
@@ -31,6 +32,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
+    "authentication",
 ]
 
 MIDDLEWARE = [
@@ -87,3 +89,16 @@ USE_TZ = True
 
 
 STATIC_URL = "/static/"
+
+
+# SimpleJWT Conf
+SIMPLE_JWT = {"ACCESS_TOKEN_LIFETIME": timedelta(weeks=1)}
+
+
+# Cookie Conf
+COOKIE_MAX_AGE = 604800
+COOKIE_SECURE = True
+
+
+# Rest framework Config
+REST_FRAMEWORK = {"DEFAULT_AUTHENTICATION_CLASSES": ("authentication.backends.SafeJWTAuthentication",)}
